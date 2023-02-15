@@ -1,7 +1,7 @@
 ## Project Plan: A simple description of the feature(s) that you plan to implement. (Files available in your project repository, one mark-down file per person for instance John needs to create john.md)
 
 The project plan is to create a backend for the website created in web user interface course. We will enable the following features.
-Feature 1: Enable image downloading for users and enable image storing in the backend. 
+Feature 1: Enable image downloading for users and enable image storing in the backend (Reng). 
 Feature 2: Allan add your feature
 Feature 3: Prashantbhai add your feature
 
