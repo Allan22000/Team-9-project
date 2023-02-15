@@ -18,7 +18,7 @@ PHPMYADMIN will be used to for CRUD functionalities.
 
 Reng is responsible for feature 1.
 Allan is responsible for feature 2.
-P
+Prashantbhai is responsible for feature 3.
 
 ## Relevant Form(s) with JavaScript validation.
 
