@@ -17,7 +17,7 @@ Reng is responsible for feature 1.
 Allan is responsible for feature 2.
 Prashantbhai is responsible for feature 3.
 
-In addition to these features we will work together on the contact us section. Each member will make a database table and connect it with the fron-end.
+In addition to these features we will work together on the contact us section. Each member will make a database table and connect it with the front-end.
 
 ## Relevant Form(s) with JavaScript validation.
 
