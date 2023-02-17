@@ -15,7 +15,7 @@ Docker and MySQL will be used to for CRUD functionalities.
 
 Reng is responsible for feature 1. <br>
 Allan is responsible for feature 2. <br>
-Prashantbhai is responsible for feature 3. <br>
+Prashantbhai is responsible for feature 3. <br> <br>
 
 In addition to these features we will work together on the contact us section. Each member will make a database table and connect it with the front-end.
 
