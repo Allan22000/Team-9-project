@@ -2,7 +2,7 @@
 
 The project plan is to create a backend for the website created in web user interface course. We will enable the following features.
 Feature 1: Enable image downloading for users and enable image storing in the backend (Reng).
-Feature 2: Allan add your feature
+Feature 2: I will include the sign-up feature to the website and work on the database structure with the rest of my teammates (Allan).
 Feature 3: Prashantbhai add your feature
 
 ## Database design: You need to design a database and is mandatory to have at least 1 table per team member. (Database design in your project repository, table names and possible relationships between your tables is enough, one database design per team)
