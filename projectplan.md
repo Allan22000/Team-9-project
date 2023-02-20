@@ -22,3 +22,4 @@ In addition to these features we will work together on the contact us section. E
 ## Relevant Form(s) with JavaScript validation.
 
 ## JavaScript event handlers for HTML elements.
+## add header and footer
