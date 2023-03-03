@@ -1,0 +1,247 @@
+.make-hover-effact-trophy:hover {
+    background-color: #72A0C1 !important;
+}
+
+/* =====================
+  General Styles
+===================== */
+html {
+    font-size: 110%;
+}
+
+html, body {
+    height: 100%; /* Fullscreen BG */
+    width: 100%;
+}
+
+small {
+    line-height: 1;
+}
+
+a {
+    color: #29a598;
+    transition: background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+a:focus,
+a:hover {
+    background-color: #29a598;
+    color: #fffefd;
+}
+
+hr {
+    border-color: #cdd1cf;
+    margin: 30px 0 60px;
+}
+
+
+/* =====================
+  Icons and Images
+===================== */
+.icon {
+    max-height: 90px;
+}
+
+.icon + p {
+    margin-top: 15px;
+}
+
+/* Profile Pic */
+.profile {
+    max-width: 180px;
+    padding: 0 15px 0 0;
+}
+
+/* Glyphicons */
+.glyphicon-heart {
+    color: #df3778;
+}
+
+/* =====================
+  Resume Modal
+===================== */
+#resumeModal h4 {
+    margin-top: 0;
+}
+
+.year {
+    text-align: right;
+}
+
+/* =====================
+  Portfolio Projects
+===================== */
+#projects .carousel-control {
+    background: none;
+    color: #fffefd;
+    font-size: 2rem;
+    margin-top: 150%;
+    opacity: 1;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    text-shadow: none;
+}
+
+#projects .carousel-control:focus,
+#projects .carousel-control:hover {
+    color: #29a598;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#projects .carousel-inner {
+    overflow: inherit;
+}
+
+#projects .carousel-inner img {
+    width: 100%;
+}
+
+#projects .carousel-caption {
+    bottom: inherit;
+    left: inherit;
+    position: relative;
+    right: inherit;
+    text-align: left;
+    text-shadow: none;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(8, 33, 30, 0.5);
+    color: #394c4a;
+    padding: 30px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card h4 {
+    font-size: 0.8rem;
+}
+
+#portfolio .carousel-indicators {
+    bottom: 0;
+    position: relative;
+}
+
+#portfolio .carousel-indicators li {
+    border-radius: 20px;
+    height: 15px;
+    width: 15px;
+}
+
+#portfolio .carousel-indicators li.active {
+    height: 17px;
+    width: 17px;
+}
+
+/*** Project Modals ***/
+.hero {
+    margin: 30px auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.label.tag {
+    background-color: #ffce3f;
+    border-radius: 0;
+    font-weight: normal;
+}
+
+/* To override button alignment in modals */
+.center {
+    text-align: center;
+}
+
+/* =====================
+  Other Styles
+===================== */
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.bg-shadow {
+    box-shadow: 0 1px 3px rgba(8, 33, 30, 0.5);
+}
+
+.bg-white {
+    background-color: #fffefd;
+    position: relative;
+}
+
+.bg-pink {
+    background-color: #df3778;
+    color: #fffefd;
+    position: relative;
+}
+
+
+.gray {
+    color: #9da6a4;
+}
+
+.dashed {
+    border-top: 2px dashed #ffce3f;
+}
+
+.checkbox {
+    display: none;
+}
+
+
+.bg-light {
+    background-color: #282d32 !important;
+}
+
+a:focus, a:hover {
+    background-color: #282d32;
+    color: #fffefd;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
