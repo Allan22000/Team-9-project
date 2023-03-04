@@ -1,0 +1,77 @@
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+}
+
+.navbar .nav > li > a {
+    color: #fff;
+    text-shadow: none;
+}
+
+.navbar .nav li .dropdown-menu {
+    z-index: 200000;
+    background-color: #282d32;
+    color: #fff;
+}
+
+header .nav li .dropdown-menu li a {
+    line-height: 28px;
+    padding: 3px 12px;
+    color: #fff;
+}
+
+.navbar .nav li .dropdown-menu {
+    z-index: 200000;
+    background-color: #282d32;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+    }
+
+    .logo-setup-css {
+        top: 9px;
+        font-size: 20px;
+    }
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .logo-setup-css {
+        top: -9px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .logo-setup-css {
+        top: 12px;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .logo-setup-css {
+        top: -20px;
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+    .logo-setup-css {
+        top: 13px;
+    }
+}
