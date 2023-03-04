@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>RealMadrid Trophies</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
@@ -38,6 +37,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #fff" href="#portfolio">Trophies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff" href="timeline.php">Timeline</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #fff" href="#contact">Contact</a>
