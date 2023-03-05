@@ -324,7 +324,6 @@ include 'db.php';
 if (!$conn) {
     die('Connection failed: ' . mysqli_connect_error());
 }
-
 // inserting form data into the table
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
