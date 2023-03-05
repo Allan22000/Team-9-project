@@ -18,6 +18,9 @@ Allan is responsible for feature 2. <br>
 Prashantbhai is responsible for feature 3. <br> <br>
 
 In addition to these features we will work together on the contact us section. Each member will make a database table and connect it with the front-end.
+We have decided to add a section that enables visitors to post comments, database will be added with PHPMYADMIN, MySql and PHP
+Further, we have decided that everybody should add JavaScript event handlers as they come up with ideas that has purpose.
+
 
 ## Relevant Form(s) with JavaScript validation.
 
