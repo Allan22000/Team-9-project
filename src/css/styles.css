@@ -35,6 +35,19 @@
   );
 }
 
+/* Succesfully inserted information notifier */
+
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Succesfully inserted information notifier */
+
+
 /* timeline */
 #margin-header {
   padding-top: 20px;

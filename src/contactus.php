@@ -1,6 +1,6 @@
 <?php
 // connect to the database
-include '../crud/db.php';
+include 'db.php';
 
 // check if the connection was successful
 if (!$conn) {
