@@ -314,7 +314,6 @@ mysqli_close($conn);
     <section>
         <!-- Contact us ends -->
 
-
         <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
 
             <div class="row my-5 justify-content-center py-5">

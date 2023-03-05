@@ -33,7 +33,7 @@
                         <a class="nav-link" style="color: #fff" href="index.php#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="#about">About</a>
+                        <a class="nav-link" style="color: #fff" href="index.php#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #fff" href="index.php#portfolio">Trophies</a>

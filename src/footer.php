@@ -30,11 +30,11 @@
                     <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
                     <ul class="list-unstyled">
                         <li>
-                        <li><a style="color: #627482  !important" href="#home">Home</a></li>
-                        <li><a style="color: #627482  !important" href="#about">About</a></li>
-                        <li><a style="color: #627482  !important" href="#portfolio">Trophies</a></li>
+                        <li><a style="color: #627482  !important" href="index.php#home">Home</a></li>
+                        <li><a style="color: #627482  !important" href="index.php#about">About</a></li>
+                        <li><a style="color: #627482  !important" href="index.php#portfolio">Trophies</a></li>
                         <li><a style="color: #627482  !important" href="/timeline.php">Timeline</a></li>
-                        <li><a style="color: #627482  !important" href="#contact">Contact</a></li>
+                        <li><a style="color: #627482  !important" href="index.php#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-4 col-12">
