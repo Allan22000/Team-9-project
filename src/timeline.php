@@ -5,202 +5,196 @@ $title = "Trophies Timeline";
 include "header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Trophies Timeline</title>
-<style>
-    body {
-    
-
-    }
-
-    .home-5-bg {
-        background: #1E90FF;
-        position: relative;
-        background-size: cover;
-        height: 60vh;
-        background-position: center center;
-    }
-
-    .section {
-        position: relative;
-    }
-
-    .home-5-content {
-        z-index: 1;
-        position: relative;
-    }
-
-    .bg-overlay {
-        background-color: #000;
-        opacity: 0.7;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-    }
-
-    .home-center {
-        display: table;
-        width: 100%;
-        height: 100%;
-    }
-
-    .home-desc-center {
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    .home-5-content {
-        z-index: 1;
-        position: relative;
-    }
-
-    .text-white-70 {
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    .f-15 {
-        font-size: 15px;
-    }
-
-    .home-5-bg #particles-js {
-        z-index: 1 !important;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    body {
-        background-color: #72A0C1 !important;
-    }
-
-    /* The actual timeline (the vertical ruler) */
-    .main-timeline {
-        position: relative;
-    }
-
-    /* The actual timeline (the vertical ruler) */
-    .main-timeline::after {
-        content: "";
-        position: absolute;
-        width: 6px;
-        background-color: #939597;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-    }
-
-    /* Container around content */
-    .timeline {
-        position: relative;
-        background-color: inherit;
-        width: 50%;
-    }
-
-    /* The circles on the timeline */
-    .timeline::after {
-        content: "";
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: -13px;
-        background-color: #939597;
-        border: 5px solid #f5df4d;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-    /* Place the container to the left */
-    .left {
-        padding: 0px 40px 20px 0px;
-        left: 0;
-    }
-
-    /* Place the container to the right */
-    .right {
-        padding: 0px 0px 20px 40px;
-        left: 50%;
-    }
-
-    /* Add arrows to the left container (pointing right) */
-    .left::before {
-        content: " ";
-        position: absolute;
-        top: 18px;
-        z-index: 1;
-        right: 30px;
-        border: medium solid white;
-        border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent white;
-    }
-
-    /* Add arrows to the right container (pointing left) */
-    .right::before {
-        content: " ";
-        position: absolute;
-        top: 18px;
-        z-index: 1;
-        left: 30px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    /* Fix the circle for containers on the right side */
-    .right::after {
-        left: -12px;
-    }
-
-    /* Media queries - Responsive timeline on screens less than 600px wide */
-    @media screen and (max-width: 600px) {
-
-        /* Place the timelime to the left */
-        .main-timeline::after {
-            left: 31px;
+    <style>
+        .home-5-bg {
+            background: #1E90FF;
+            position: relative;
+            background-size: cover;
+            height: 70vh;
+            background-position: center center;
         }
 
-        /* Full-width containers */
-        .timeline {
+        .section {
+            position: relative;
+        }
+
+        .home-5-content {
+            z-index: 1;
+            position: relative;
+        }
+
+        .bg-overlay {
+            background-color: #000;
+            opacity: 0.7;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
             width: 100%;
-            padding-left: 70px;
-            padding-right: 25px;
         }
 
-        /* Make sure that all arrows are pointing leftwards */
-        .timeline::before {
-            left: 60px;
+        .home-center {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+
+        .home-desc-center {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .home-5-content {
+            z-index: 1;
+            position: relative;
+        }
+
+        .text-white-70 {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .f-15 {
+            font-size: 15px;
+        }
+
+        .home-5-bg #particles-js {
+            z-index: 1 !important;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #72A0C1 !important;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .main-timeline {
+            position: relative;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .main-timeline::after {
+            content: "";
+            position: absolute;
+            width: 6px;
+            background-color: #939597;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .timeline {
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        /* The circles on the timeline */
+        .timeline::after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background-color: #939597;
+            border: 5px solid #f5df4d;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Place the container to the left */
+        .left {
+            padding: 0px 40px 20px 0px;
+            left: 0;
+        }
+
+        /* Place the container to the right */
+        .right {
+            padding: 0px 0px 20px 40px;
+            left: 50%;
+        }
+
+        /* Add arrows to the left container (pointing right) */
+        .left::before {
+            content: " ";
+            position: absolute;
+            top: 18px;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+            content: " ";
+            position: absolute;
+            top: 18px;
+            z-index: 1;
+            left: 30px;
             border: medium solid white;
             border-width: 10px 10px 10px 0;
             border-color: transparent white transparent transparent;
         }
 
-        /* Make sure all circles are at the same spot */
-        .left::after,
+        /* Fix the circle for containers on the right side */
         .right::after {
-            left: 18px;
+            left: -12px;
         }
 
-        .left::before {
-            right: auto;
-        }
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
 
-        /* Make all right containers behave like the left ones */
-        .right {
-            left: 0%;
+            /* Place the timelime to the left */
+            .main-timeline::after {
+                left: 31px;
+            }
+
+            /* Full-width containers */
+            .timeline {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            /* Make sure that all arrows are pointing leftwards */
+            .timeline::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            /* Make sure all circles are at the same spot */
+            .left::after,
+            .right::after {
+                left: 18px;
+            }
+
+            .left::before {
+                right: auto;
+            }
+
+            /* Make all right containers behave like the left ones */
+            .right {
+                left: 0%;
+            }
         }
-    }
-</style>
+    </style>
 </head>
+
 <body>
     <section>
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -218,8 +212,8 @@ include "header.php" ?>
                                     <h3 class="text-white font-weight-normal home-5-title mb-0">Real Madrid's Trophy
                                         Cabinet: <br> A Look at the Club's Historic Collection of Titles</h3>
 
-                                        <!-- JavaScript event that changes the font size when mouse is over  -->
-                                        
+                                    <!-- JavaScript event that changes the font size when mouse is over  -->
+
                                     <p class="text-white-70 mt-4 f-15 mb-0"><SPAN STYLE=""
                                             onMouseOver="this.style.fontSize = '20px'"
                                             onMouseOut="this.style.fontSize = ''">
@@ -477,4 +471,5 @@ include "header.php" ?>
 
 </body>
 <?php include "footer.php" ?>
+
 </html>
