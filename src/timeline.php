@@ -16,7 +16,7 @@ include "header.php" ?>
     <title>Trophies Timeline</title>
 <style>
     body {
-        margin-top: 20px;
+    
 
     }
 
