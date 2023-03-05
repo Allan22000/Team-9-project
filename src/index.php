@@ -1,3 +1,36 @@
+<!-- Contact Us PHP begings -->
+
+<!-- Prashant created name and email functionality -->
+<!-- Reng created message functionality -->
+<!-- Database connection and closing was created jointly -->
+
+<?php
+// connecting to the database
+include 'db.php';
+
+// checking if the connection was successful
+if (!$conn) {
+    die('Connection failed: ' . mysqli_connect_error());
+}
+// inserting form data into the table
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
+    if (mysqli_query($conn, $sql)) {
+        echo 'Data inserted successfully';
+    } else {
+        echo 'Error inserting data: ' . mysqli_error($conn);
+    }
+}
+
+// closing the database connection
+mysqli_close($conn);
+?>
+<!-- Contact us PHP ends -->
+
+<!-- HTML begins -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -309,35 +342,4 @@
 </body>
 
 </html>
-
-
-<!-- Contact Us PHP begings -->
-<!-- Prashant created name and email functionality -->
-<!-- Reng created message functionality -->
-<!-- Database connection and closing was created jointly -->
-
-<?php
-// connecting to the database
-include 'db.php';
-
-// checking if the connection was successful
-if (!$conn) {
-    die('Connection failed: ' . mysqli_connect_error());
-}
-// inserting form data into the table
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
-    if (mysqli_query($conn, $sql)) {
-        echo 'Data inserted successfully';
-    } else {
-        echo 'Error inserting data: ' . mysqli_error($conn);
-    }
-}
-
-// closing the database connection
-mysqli_close($conn);
-?>
-<!-- Contact us PHP ends -->
+<!-- HTML ends -->
