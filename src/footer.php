@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -30,17 +30,19 @@
                     <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
                     <ul class="list-unstyled">
                         <li>
-                        <li><a style="color: #627482  !important" href="#home">Home</a></li>
-                        <li><a style="color: #627482  !important" href="#about">About</a></li>
-                        <li><a style="color: #627482  !important" href="#portfolio">Trophies</a></li>
+                        <li><a style="color: #627482  !important" href="index.php#home">Home</a></li>
+                        <li><a style="color: #627482  !important" href="index.php#about">About</a></li>
+                        <li><a style="color: #627482  !important" href="index.php#portfolio">Trophies</a></li>
                         <li><a style="color: #627482  !important" href="/timeline.php">Timeline</a></li>
-                        <li><a style="color: #627482  !important" href="#contact">Contact</a></li>
+                        <li><a style="color: #627482  !important" href="index.php#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-4 col-12">
                     <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
-                    <p class="mb-1">RAUHANKATU 22</p>
-                    <p>00880 HELSINKI</p>
+                    <li class="list-unstyled"><a style="color: #627482  !important"
+                            href="https://www.google.com/maps/place/Rauhankatu+22,+00170+Helsinki/@60.1713957,24.9489355,17z/data=!3m1!4b1!4m5!3m4!1s0x46920bce212f44e9:0x49e18b735b3e3e9c!8m2!3d60.171393!4d24.9511242"
+                            target="_blank">RAUHANKATU
+                            22 <br> 00170 HELSINKI <br> FINLAND </a></li>
                 </div>
             </div>
             <div class="row">

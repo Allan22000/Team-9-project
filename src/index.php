@@ -1,3 +1,63 @@
+<!-- Contact Us PHP begings -->
+
+<!-- Prashant created name and email functionality -->
+<!-- Reng created message functionality -->
+<!-- Database connection and closing was created jointly -->
+
+<?php
+// connecting to the database
+include 'db.php';
+
+// checking if the connection was successful
+if (!$conn) {
+    die('Connection failed: ' . mysqli_connect_error());
+}
+// inserting form data into the table
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
+    if (mysqli_query($conn, $sql)) {
+        echo '<p class="success-message">Data updated successfully</p>';
+    } else {
+        echo 'Error inserting data: ' . mysqli_error($conn);
+    }
+}
+
+// closing the database connection
+// mysqli_close($conn);
+
+// update
+if (isset($_POST['update'])) {
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $sql = "UPDATE contact SET name='$name', email='$email', message='$message' WHERE id='$id'";
+    if (mysqli_query($conn, $sql)) {
+        echo 'Data updated successfully';
+    } else {
+        echo 'Error updating data: ' . mysqli_error($conn);
+    }
+}
+
+// delete
+if (isset($_POST['delete'])) {
+    $id = $_POST['id'];
+    $sql = "DELETE FROM contact WHERE id='$id'";
+    if (mysqli_query($conn, $sql)) {
+        echo 'Data deleted successfully';
+    } else {
+        echo 'Error deleting data: ' . mysqli_error($conn);
+    }
+}
+// closing the database connection
+mysqli_close($conn);
+?>
+<!-- Contact us PHP ends -->
+
+<!-- HTML begins -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -254,7 +314,6 @@
     <section>
         <!-- Contact us ends -->
 
-
         <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
 
             <div class="row my-5 justify-content-center py-5">
@@ -276,8 +335,10 @@
                         </div>
                         <div class="col-xl-2 col-md-4 col-sm-4 col-12">
                             <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
-                            <p class="mb-1">RAUHANKATU 22</p>
-                            <p>00880 HELSINKI</p>
+                            <li class="list-unstyled"><a style="color: #627482  !important"
+                                    href="https://www.google.com/maps/place/Rauhankatu+22,+00170+Helsinki/@60.1713957,24.9489355,17z/data=!3m1!4b1!4m5!3m4!1s0x46920bce212f44e9:0x49e18b735b3e3e9c!8m2!3d60.171393!4d24.9511242"
+                                    target="_blank">RAUHANKATU
+                                    22 <br> 00170 HELSINKI <br> FINLAND </a></li>
                         </div>
                     </div>
                     <div class="row">
@@ -292,7 +353,8 @@
                         </div>
                         <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
                             <h6 class="mt-55 mt-2 text-muted bold-text"><b>Email</b></h6><small> <span><i
-                                        class="fa fa-envelope" aria-hidden="true"></i></span> support@gmail.com</small>
+                                        class="fa fa-envelope" aria-hidden="true"></i></span>
+                                madrid@trophies.com</small>
                         </div>
                         <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3   ">
                             <h6 class="text-muted bold-text"><b>Phone</b></h6><small><span><i class="fa fa-envelope"
@@ -310,35 +372,4 @@
 
 </html>
 
-
-<!-- Contact Us PHP begings -->
-<!-- Prashant created name and email functionality -->
-<!-- Reng created message functionality -->
-<!-- Database connection and closing was created jointly -->
-
-<?php
-// connecting to the database
-include 'db.php';
-
-// checking if the connection was successful
-if (!$conn) {
-    die('Connection failed: ' . mysqli_connect_error());
-}
-
-// inserting form data into the table
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
-    if (mysqli_query($conn, $sql)) {
-        echo 'Data inserted successfully';
-    } else {
-        echo 'Error inserting data: ' . mysqli_error($conn);
-    }
-}
-
-// closing the database connection
-mysqli_close($conn);
-?>
-<!-- Contact us PHP ends -->
+<!-- HTML ends -->
