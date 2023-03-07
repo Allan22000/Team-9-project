@@ -342,6 +342,7 @@ include "header.php" ?>
         // Changing background colour when hovering on the card with Eventlistener
         let colourChange = document.querySelectorAll('.change-color');
         colourChange.forEach(element => {
+            
             element.addEventListener('mouseover', () => {
                 element.style.backgroundColor = '#FEBE10';
             });
