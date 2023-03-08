@@ -37,6 +37,9 @@
                         <a class="nav-link" style="color: #fff" href="index.php#home">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" style="color: #fff" href="player.php">Players</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" style="color: #fff" href="index.php#about">About</a>
                     </li>
                     <li class="nav-item">
