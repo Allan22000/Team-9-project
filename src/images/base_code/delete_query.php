@@ -1,7 +1,7 @@
 <?php
 
 include '../config/constant.php';
-include '../config/db.php';
+include '../config/connection.php';
 
 $getRequestData = $_GET;
 

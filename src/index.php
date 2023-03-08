@@ -1,7 +1,7 @@
 <!-- Contact Us PHP begings -->
 
 <!-- Prashant created name and email functionality -->
-<!-- Reng created message functionality -->
+<!-- prashant created message functionality -->
 <!-- Database connection and closing was created jointly -->
 
 <?php

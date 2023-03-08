@@ -112,7 +112,7 @@
 
         </div>
     </section>
-    <footer style="background-color:#282d32;">
+    <footer>
         <?php include 'includes/footer1.php' ?>
     </footer>
 </div>
