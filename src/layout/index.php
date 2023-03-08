@@ -6,8 +6,17 @@
 
 <?php
 // connecting to the database
-include 'db.php';
+include '../database/db.php';
+include 'header.php';
+?>
 
+<style>
+<?php include('../css/styles.css'); ?>
+</style>    
+
+
+
+<?php
 // checking if the connection was successful
 if (!$conn) {
     die('Connection failed: ' . mysqli_connect_error());
@@ -79,36 +88,7 @@ mysqli_close($conn);
     <a href="#"><i class="icon iconify" data-icon="ion-social-instagram"></i></a>
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="background-color: #282d32">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#home" style="color: #fff">RealMadrid Trophies</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0" style="color: #fff">
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="#portfolio">Trophies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="/timeline.php">Timeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
     <header class="masthead" id="home">
         <div class="container px-4 px-lg-5 h-100"></div>
     </header>
@@ -143,7 +123,7 @@ mysqli_close($conn);
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="mt-5">
                         <p class="text-muted mb-0">
-                            <img src="assets/logo.png" style="width: 300px" />
+                            <img src="../assets/logo.png" style="width: 300px" />
                         </p>
                     </div>
                 </div>
@@ -156,7 +136,7 @@ mysqli_close($conn);
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/7.jpeg"
                         title="The best club of the 20th century Fifa trophy">
-                        <img class="img-fluid" src="assets/img/trophies/fullsize/7.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/fullsize/7.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50"></div>
                             <div class="project-name">The best club of the 20th century Fifa trophy</div>
@@ -166,7 +146,7 @@ mysqli_close($conn);
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/8.jpeg"
                         title="18 Regional Championship">
-                        <img class="img-fluid" src="assets/img/trophies/fullsize/8.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/fullsize/8.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">18</div>
                             <div class="project-name">Regional Championship</div>
@@ -175,7 +155,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/1.jpeg" title="2 Uefa Cups">
-                        <img class="img-fluid" src="assets/img/trophies/thumbnails/1.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/thumbnails/1.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">2</div>
                             <div class="project-name">Uefa Cups</div>
@@ -184,7 +164,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/10.jpeg" title="5 European Super Cups">
-                        <img class="img-fluid" src="assets/img/trophies/fullsize/10.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/fullsize/10.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">5</div>
                             <div class="project-name">European Super Cups</div>
@@ -193,7 +173,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/2.jpeg" title="14 European Cups">
-                        <img class="img-fluid" src="assets/img/trophies/thumbnails/2.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/thumbnails/2.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">14</div>
                             <div class="project-name">European Cups</div>
@@ -202,7 +182,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/3.jpeg" title="5 Mancomunados Trophies">
-                        <img class="img-fluid" src="assets/img/trophies/thumbnails/3.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/thumbnails/3.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">5</div>
                             <div class="project-name">Mancomunados Trophies</div>
@@ -211,7 +191,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/4.jpeg" title="35 National Leagues">
-                        <img class="img-fluid" src="assets/img/trophies/thumbnails/4.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/thumbnails/4.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">35</div>
                             <div class="project-name">National Leagues</div>
@@ -220,7 +200,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/5.jpeg" title="19 Spanish Cups">
-                        <img class="img-fluid" src="assets/img/trophies/thumbnails/5.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/thumbnails/5.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">19</div>
                             <div class="project-name">Spanish Cups</div>
@@ -229,7 +209,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/6.jpeg" title="12 Spanish Super Cups">
-                        <img class="img-fluid" src="assets/img/trophies/thumbnails/6.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/thumbnails/6.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">12</div>
                             <div class="project-name">Spanish Super Cups</div>
@@ -238,7 +218,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/11.jpeg" title="7 Fifa Club World Cups">
-                        <img class="img-fluid" src="assets/img/trophies/fullsize/11.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/fullsize/11.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">7</div>
                             <div class="project-name">Fifa Club World Cups</div>
@@ -247,7 +227,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/12.jpeg" title="2 Small World Cups">
-                        <img class="img-fluid" src="assets/img/trophies/fullsize/12.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/fullsize/12.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">2</div>
                             <div class="project-name">Small World Cups</div>
@@ -256,7 +236,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-sm-6 p-2">
                     <a class="portfolio-box" href="assets/img/trophies/fullsize/13.jpeg" title="1 League Cup">
-                        <img class="img-fluid" src="assets/img/trophies/fullsize/13.jpeg" alt="..." />
+                        <img class="img-fluid" src="../assets/img/trophies/fullsize/13.jpeg" alt="..." />
                         <div class="portfolio-box-caption">
                             <div class="project-category text-white-50">1</div>
                             <div class="project-name">League Cup</div>

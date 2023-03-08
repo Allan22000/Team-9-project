@@ -1,0 +1,33 @@
+.wholeSection{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #72A0C1;
+
+}
+
+.section1{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3{
+    margin-top: 50px;
+    margin-bottom: 100px;
+   
+}
+
+#submit{
+    background-color: #282d32;
+    color: white;
+}
+

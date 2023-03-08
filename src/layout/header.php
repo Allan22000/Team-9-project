@@ -18,6 +18,10 @@
     <a href="#"><i class="icon iconify" data-icon="ion-social-instagram"></i></a>
 </head>
 
+<style>
+<?php include('../css/styles.css'); ?>
+</style>  
+
 <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="background-color: #282d32">
         <div class="container px-4 px-lg-5">
@@ -43,6 +47,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #fff" href="/index.php#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff" href="feedback.php">Feedback</a>
                     </li>
                 </ul>
             </div>

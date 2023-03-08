@@ -1,6 +1,6 @@
 <?php
 // connect to the database
-include 'db.php';
+include '../database/db.php';
 
 // check if the connection was successful
 if (!$conn) {
