@@ -158,6 +158,10 @@ include "header.php" ?>
         @media screen and (max-width: 600px) {
 
             /* Place the timelime to the left */
+            .home-5-bg {
+                height: 90vh;
+            }
+
             .main-timeline::after {
                 left: 31px;
             }
@@ -342,7 +346,7 @@ include "header.php" ?>
         // Changing background colour when hovering on the card with Eventlistener
         let colourChange = document.querySelectorAll('.change-color');
         colourChange.forEach(element => {
-            
+
             element.addEventListener('mouseover', () => {
                 element.style.backgroundColor = '#FEBE10';
             });
