@@ -1,7 +1,7 @@
 <!-- Contact Us PHP begings -->
 
 <!-- Prashant created name and email functionality -->
-<!-- Reng created message functionality -->
+<!-- prashant created message functionality -->
 <!-- Database connection and closing was created jointly -->
 
 <?php
@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
     $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
     if (mysqli_query($conn, $sql)) {
-        echo '<p class="success-message">Data updated successfully</p>';
+        echo 'Message sent successfully';
     } else {
         echo 'Error inserting data: ' . mysqli_error($conn);
     }

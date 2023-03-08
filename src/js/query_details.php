@@ -36,12 +36,13 @@
                         <th scope="col">First Name</th>
                         <th scope="col">Last Name</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Action</th>
                     </tr>
                     </thead>
                     <tbody>
 
                     <?php
-                    $checkUserAlreadyExist = $conn->query("SELECT b.* FROM  users AS b  ORDER BY b.id DESC");
+                    $checkUserAlreadyExist = $conn->query("SELECT b.* FROM users AS b ORDER BY b.id DESC");
                     $getAllDetails = $checkUserAlreadyExist->fetchAll(PDO::FETCH_ASSOC);
                     ?>
 
@@ -53,6 +54,9 @@
                                 <td><?= $getAllDetail['firstName'] ?></td>
                                 <td><?= $getAllDetail['lastName'] ?></td>
                                 <td><?= $getAllDetail['email'] ?></td>
+                                <td>
+                                    <a href="base_code/delete_query.php?id=<?= $getAllDetail['id'] ?>" style="color:red;"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                </td>
                             </tr>
                         <?php endforeach; ?>
                     <?php endif; ?>
@@ -62,7 +66,7 @@
             </div>
         </div>
     </section>
-    <footer style="background-color:#282d32;">
+    <footer>
         <?php include 'includes/footer1.php' ?>
     </footer>
 </div>
