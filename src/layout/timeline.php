@@ -2,7 +2,7 @@
 
 <?php
 $title = "Trophies Timeline";
-include "header.php" ?>
+include "header.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
