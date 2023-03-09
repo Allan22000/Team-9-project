@@ -40,16 +40,16 @@
                         <a class="nav-link" style="color: #fff" href="player.php">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="index.php#about">About</a>
+                        <a class="nav-link" style="color: #fff" href="/index.php#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="index.php#portfolio">Trophies</a>
+                        <a class="nav-link" style="color: #fff" href="/index.php#portfolio">Trophies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="timeline.php">Timeline</a>
+                        <a class="nav-link" style="color: #fff" href="/timeline.php">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="index.php#contact">Contact</a>
+                        <a class="nav-link" style="color: #fff" href="/index.php#contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #fff" href="feedback.php">Feedback</a>
