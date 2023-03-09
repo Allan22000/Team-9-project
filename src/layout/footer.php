@@ -33,7 +33,7 @@
                         <li><a style="color: #627482  !important" href="index.php#home">Home</a></li>
                         <li><a style="color: #627482  !important" href="index.php#about">About</a></li>
                         <li><a style="color: #627482  !important" href="index.php#portfolio">Trophies</a></li>
-                        <li><a style="color: #627482  !important" href="/timeline.php">Timeline</a></li>
+                        <li><a style="color: #627482  !important" href="timeline.php">Timeline</a></li>
                         <li><a style="color: #627482  !important" href="index.php#contact">Contact</a></li>
                     </ul>
                 </div>
