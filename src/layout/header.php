@@ -34,7 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0" style="color: #fff">
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #fff" href="/index.php#home">Home</a>
+                        <a class="nav-link" style="color: #fff" href="index.php#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff" href="player.php">Players</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #fff" href="/index.php#about">About</a>
