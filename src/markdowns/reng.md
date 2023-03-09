@@ -18,6 +18,8 @@
 
 ### 9. Created Timeline page which describes the trophies won, which years were they won and description of the tournament.
 
-### 10. Added the following JavaScript event handlers 1. JavaScript eventlistener that changes the background color when mouse is over the content in timeline section 2. JavaScript event listener that changes the font size when mouse is over
+### 10. Added the following JavaScript event handlers 1. JavaScript eventlistener that changes the background color when mouse is over the content in timeline section 2. JavaScript event listener that changes the font size when mouse is over.
 
-### 11. Added Update and delete in the contact us page to the correct file.
+### 11. Update and delete in the contact us page to the correct file.
+
+### 12. Created memories page that is able to insert name and image into database, query it and can disaplay it on the web page.

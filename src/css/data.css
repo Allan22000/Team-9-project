@@ -1,0 +1,49 @@
+body {
+  background-color: #72a0c1;
+  color: #000;
+}
+
+form {
+  background-color: white;
+  border: 20px solid black;
+  padding: 100px;
+  max-width: 500px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input,
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+  margin-left: 25%;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+input:hover {
+  background-color: grey;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  color: #000;
+}
