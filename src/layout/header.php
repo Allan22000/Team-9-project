@@ -49,6 +49,9 @@
                         <a class="nav-link" style="color: #fff" href="/timeline.php">Timeline</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" style="color: #fff" href="memories.php">Memories</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" style="color: #fff" href="/index.php#contact">Contact</a>
                     </li>
                     <li class="nav-item">
